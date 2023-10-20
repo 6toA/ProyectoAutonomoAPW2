@@ -16,3 +16,13 @@ export * from './genero/update-genero.dto'
 
 export * from './nacionalidad/create-nacionalidad.dto'
 export * from './nacionalidad/update-nacionalidad.dto'
+
+export * from './idioma/create-idioma.dto'
+export * from './idioma/update-idioma.dto'
+
+export * from './traduccionidioma/create-traduccionidioma.dto'
+export * from './traduccionidioma/update-traduccionidioma.dto'
+
+export * from './origenIdioma/create-origenIdioma.dto'
+export * from './origenIdioma/update-origenIdioma.dto'
+

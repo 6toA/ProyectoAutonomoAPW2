@@ -6,6 +6,9 @@ import { InventarioRoutes} from "./inventario/routes";
 import { AutorRoutes } from "./autor/routes";
 import { GeneroRoutes } from "./genero/routes";
 import { NacionalidadRoutes } from "./nacionalidad/routes";
+import { origenIdiomaRoutes } from "./origenIdioma/routes";
+import { IdiomaRoutes } from "./idioma/routes";
+import { TraduccionesRoutes } from "./traduccionidioma/routes";
 
 export class AppRoutes {
     static get routes(): Router {
@@ -17,6 +20,9 @@ export class AppRoutes {
         router.use('/api/autores', AutorRoutes.routes);
         router.use('/api/generos', GeneroRoutes.routes);
         router.use('/api/Nacionalidades', NacionalidadRoutes.routes);
+        router.use('/api/origenes', origenIdiomaRoutes.routes);
+        router.use('/api/idiomas', IdiomaRoutes.routes);
+        router.use('/api/traducciones', TraduccionesRoutes.routes);
         return router;
     }
 }
