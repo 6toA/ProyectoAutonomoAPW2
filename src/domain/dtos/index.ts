@@ -26,3 +26,11 @@ export * from './traduccionidioma/update-traduccionidioma.dto'
 export * from './origenIdioma/create-origenIdioma.dto'
 export * from './origenIdioma/update-origenIdioma.dto'
 
+export * from './libro/create-libro-dto'
+export * from './libro/update-libro-dto'
+
+export * from './editorial/create-editorial-dto'
+export * from './editorial/update-editorial-dto'
+
+export * from './categoria/create-categoria-dto'
+export * from './categoria/update-categoria-dto'

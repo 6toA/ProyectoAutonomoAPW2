@@ -9,6 +9,9 @@ import { NacionalidadRoutes } from "./nacionalidad/routes";
 import { origenIdiomaRoutes } from "./origenIdioma/routes";
 import { IdiomaRoutes } from "./idioma/routes";
 import { TraduccionesRoutes } from "./traduccionidioma/routes";
+import { LibroRoutes } from "./libro/routes";
+import { EditorialRoutes } from "./editorial/routes";
+import { CategoriaRoutes } from "./categoria/routes";
 
 export class AppRoutes {
     static get routes(): Router {
@@ -23,6 +26,10 @@ export class AppRoutes {
         router.use('/api/origenes', origenIdiomaRoutes.routes);
         router.use('/api/idiomas', IdiomaRoutes.routes);
         router.use('/api/traducciones', TraduccionesRoutes.routes);
+        router.use('/api/Libros', LibroRoutes.routes);
+        router.use('/api/editoriales', EditorialRoutes.routes);
+        router.use('/api/categorias', CategoriaRoutes.routes);
+
         return router;
     }
 }
